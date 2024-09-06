@@ -25,10 +25,6 @@ def leer_placa(img):
 app = FastAPI()
 @app.get("/leer_placa")
 
-if __name__ == "__lector_placas_api__":
-    uvicorn.run(app, host="127.0.0.1", port=5555)
-
-
 
 def index():
         cap = cv2.VideoCapture("rtsp://admin:001122Admin@192.168.10.89")
