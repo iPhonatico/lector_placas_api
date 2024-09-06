@@ -26,6 +26,8 @@ app = FastAPI()
 @app.get("/leer_placa")
 
 
+
+
 def index():
         cap = cv2.VideoCapture("rtsp://admin:001122Admin@192.168.10.89")
         recording = True
@@ -42,3 +44,5 @@ def index():
 
 
 
+if __name__ == '__main__':
+   uvicorn.run(app, host="0.0.0.0", port=5555)
